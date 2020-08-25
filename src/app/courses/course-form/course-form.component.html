@@ -1,0 +1,109 @@
+<div class="Rectangle" *ngIf="course">
+  <form role="form" novalidate class="authForm" [formGroup]="courseForm" (ngSubmit)="onCourseFormSubmit()">
+    <div class="header">
+        <h2 class="New-course">{{ pageTitle }}</h2> <br>
+    </div>
+    <div class="form-group title-block">
+          <div class="validation" *ngIf="isInvalidAndUntouched('name')">
+            <div class="errorMsg" for="name" *ngIf="onInputRequired('name')">
+              <small> *{{ 'ERROR.Error_Empty' | translate}}</small>
+            </div>
+            <div class="errorMsg" for="name"
+                   *ngIf="onInputMaxLength('title')">
+              <small> *{{ 'ERROR.Error_To_Many' | translate}}</small>
+            </div>
+          </div>
+
+          <label class="Start-type-the-tag-req" for="name" *ngIf="isUntouched('name')">*{{ 'ERROR.Required' | translate}}</label>
+          <label class="Tag-it-component" for="name">{{ 'ADD_&_EDIT.Title' | translate}}:</label> <br>
+          <input
+            formControlName="name"
+            class="form-controlinput width-100"
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Title input"
+          > <br>
+    </div>
+    <div class="description-block">
+      <div class="validation" *ngIf="isInvalidAndUntouched('description')">
+        <div class="errorMsg" for="description" *ngIf="onInputRequired('description')">
+          <small> *{{ 'ERROR.Error_Empty' | translate}}</small>
+        </div>
+        <div class="errorMsg" for="description"
+             *ngIf="onInputMaxLength('description')">
+          <small> *{{ 'ERROR.Error_To_Many' | translate}}</small>
+        </div>
+      </div>
+
+      <label class="Tag-it-component" for="description">{{ 'ADD_&_EDIT.Description' | translate}}:</label>
+      <label class="Start-type-the-tag-req" *ngIf="isUntouched('description')" for="description">*{{ 'ERROR.Required' | translate}}</label>
+      <textarea
+        formControlName="description"
+        class="form-control input width-100"
+        rows="10"
+        id="description"
+        placeholder="Add description"
+      ></textarea> <br>
+    </div>
+    <div class="duration-block">
+      <div class="validation less-width" *ngIf="isInvalidAndUntouched('length')">
+        <div class="errorMsg" for="length" *ngIf="onInputRequired('length')">
+          <small> *This input must not be empty</small>
+        </div>
+        <div class="errorMsg" for="length" *ngIf="getElementError('length').pattern">
+          <small> *Duration must contains between 1 - 3 digits</small>
+        </div>
+      </div>
+        <app-duration-input
+          formControlName="length"
+          [control]="courseForm.controls.length"
+        ></app-duration-input> <br>
+    </div>
+    <div class="date-block">
+      <div class="validation less-width" *ngIf="isInvalidAndUntouched('date')">
+        <div class="errorMsg" for="date"
+             *ngIf="onInputRequired('date')">
+          <small> *This input must not be empty</small>
+        </div>
+        <div class="errorMsg" for="date" *ngIf="getElementError('date').pattern">
+          <small> *Date must contains digits in format <br> 'yy-mm-dd'</small>
+        </div>
+      </div>
+      <app-date-input
+        formControlName="date"
+        [control]="courseForm.controls.date"></app-date-input> <br>
+    </div>
+    <div class="form-group authors-block">
+      <div class="validation less-width" *ngIf="isInvalidAndUntouched('authors')">
+        <div class="errorMsg" for="authors" *ngIf="onInputRequired('authors')">
+          <small> *This input must not be empty</small>
+        </div>
+      </div>
+
+    <app-authors-input
+      formControlName="authors"
+      [control]="courseForm.controls.authors">
+    </app-authors-input> <br>
+
+    <app-genre-input
+      formControlName="genre"
+      [control]="courseForm.controls.genre">
+    </app-genre-input> <br>
+    </div>
+    <div class="button-block">
+        <span class="pos-right">
+            <input
+              [disabled]="courseForm.invalid"
+              class="Mask save"
+              type="submit"
+              value="{{ 'ADD_&_EDIT.Submit_Button' | translate}}">
+            <input
+              (click)="cancel()"
+               class="Mask cancel"
+               type="button"
+               value="{{ 'ADD_&_EDIT.Cancel_Button' | translate}}">
+        </span>
+    </div>
+  </form>
+</div>

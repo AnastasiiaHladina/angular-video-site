@@ -1,0 +1,61 @@
+{
+  "HEADER": {
+    "Login": "Login",
+    "LogOut": "LogOut"
+  },
+  "LOGIN": {
+    "Login_Title": "Login",
+    "Title_Email": "Email",
+    "Title_Pass": "Password",
+    "Login_Button": "Login"
+  },
+  "COURSES_LIST": {
+    "Courses": "Courses",
+    "Add_Button": "Add course",
+    "Load_More": "Load More",
+    "No_Data": "No data. Feel free to add new course",
+    "Find": "Find"
+  },
+  "COURSE": {
+    "Edit_Button": "Edit",
+    "Delete_Button": "Delete",
+    "Single": "Course"
+  },
+  "BREADCRUMB": {
+    "Breadcrumb_Title": "{{ breadcrumbTitle }}"
+  },
+  "ADD_COURSE": {
+    "Title_Page": "Add Course"
+  },
+  "EDIT_COURSE": {
+    "Title_Page": "Edit Course"
+  },
+  "ADD_&_EDIT": {
+    "Title": "Title",
+    "Description": "Description",
+    "Duration": "Duration",
+    "Date": "Date",
+    "Authors": "Authors",
+    "Genre": "Genre",
+    "Submit_Button": "Submit",
+    "Cancel_Button": "Cancel"
+  },
+  "COURSE_PAGE": {
+    "Authors": "Authors",
+    "Duration": "Duration",
+    "Description": "Description"
+  },
+  "ERROR": {
+    "Error_Empty": "This input must not be empty",
+    "Error_Not_Enough": "Password must be more characters",
+    "Error_To_Many": "Password must be less characters",
+
+    "Error_Email": "You must  be enter right email",
+
+    "Required": "required"
+  },
+  "LANGUAGES": {
+    "en": "English",
+    "ru": "Russian"
+  }
+}

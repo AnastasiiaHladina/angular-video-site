@@ -1,0 +1,14 @@
+<div class="wrap">
+
+  <app-loading-block *ngIf="loading$ | async"></app-loading-block>
+
+  <app-header></app-header>
+
+  <app-course-breadcrumbs class="breadcrumbs"></app-course-breadcrumbs>
+
+  <div class="mainPage">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,6 @@
+<div class="select">
+  <select name="lang" id="lang" [formControl]="valueFormControl">
+    <option *ngFor = "let tr of langList"
+      value="{{tr.code}}" >{{tr.language}}</option>
+  </select>
+</div>

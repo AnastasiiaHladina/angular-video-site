@@ -1,0 +1,121 @@
+.course {
+  margin: 60px 0;
+  /*height: 163px;*/
+  padding: 10px 40px;
+  border-radius: 8px;
+  box-shadow: 0 1px 24px 0 rgba(18, 21, 35, 0.18);
+  background-color: white;
+}
+.Mask {
+  font-size: 14px;
+  float: right;
+  width: 138px;
+  height: 36px;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  background-color: #30b6dd;
+  margin-top: 20px;
+}
+.Mask:hover {
+  cursor: pointer;
+  background-color: #0091bb;
+}
+.margin-l {
+  margin-left: 20px;
+}
+.created-At{
+  font-size: 12px;
+  font-style: italic;
+  margin-left: 20px;
+  font-family: Calibri;
+  color: #8a8787;
+}
+.duration {
+  line-height: 0;
+}
+.fresh{
+  border: 2px solid #79f268;
+}
+.upcoming{
+  border: 2px solid #87daf4;
+}
+.star{
+  border: none;
+  background: none;
+  width: 40px;
+  height: 40px;
+  color: #b1e73b;
+}
+.star:hover{
+  cursor: pointer;
+  color: rgba(226, 204, 6, 0.98);
+}
+.star > img{
+  width: 100%;
+}
+.ifStarClick{
+  background-color: #e8e8e8;
+}
+.ifStarClickForStar{
+  color: #008be8;
+}
+.title{
+  margin-bottom: 0px;
+}
+
+.modalOnDelete{
+  border: 1px solid #867676;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  width: 50%;
+  box-shadow: 0px 0px 20px rgb(18, 21, 35);
+  position: fixed;
+  margin-left: 15%;
+}
+.delete{
+  float: right;
+  border: 1px solid #5890a2;
+  border-radius: 5px;
+  padding: 10px 5px;
+  background: #a7eaff;
+}
+.delete > h4{
+  margin-top: 0;
+}
+.answ{
+  float: left;
+  width: 50%;
+  border: 1px solid #005bab;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.link{
+  text-decoration: none;
+  color: #2d95f0;
+}
+.link:hover{
+  color: #1848f0;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

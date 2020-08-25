@@ -1,0 +1,17 @@
+<div>
+    <div class="container">
+      <label class="Start-type-the-tag-req" for="duration"
+             *ngIf="isInvalidAndTouched()">*{{ 'ERROR.Required' | translate}}</label>
+      <label class="Tag-it-component" for="duration">{{ 'ADD_&_EDIT.Duration' | translate}}:</label>
+    </div> <br>
+  <div class="form-group">
+
+    <input
+      [formControl]="valueFormControl"
+      class="form-control input width-40"
+      name="duration"
+      id="duration"
+      type="text"
+      placeholder="Minutes">
+  </div>
+</div>

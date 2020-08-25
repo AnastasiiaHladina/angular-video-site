@@ -1,0 +1,61 @@
+
+<div class="date-picker">
+  <div class="selected-date"></div>
+
+  <div class="dates">
+    <div class="month">
+      <div class="arrows prev-mth">&lt;</div>
+      <div class="mth"></div>
+      <div class="arrows next-mth">&gt;</div>
+    </div>
+
+    <div class="days"></div>
+  </div>
+</div>
+
+
+<!--
+СТАРЫЙ
+<div>
+    <div class="container">
+      <label class="Start-type-the-tag-req" for="date"
+             *ngIf="!isTouched()">*{{ 'ERROR.Required' | translate}}</label>
+      <label class="Tag-it-component" for="date">{{ 'ADD_&_EDIT.Date' | translate}}:</label>
+    </div> <br>
+  <div class="form-group">
+    <input
+      [formControl]="valueFormControl"
+      class="form-control input width-40"
+      name="date"
+      id="date"
+      type="text"
+      placeholder="yyyy-mm-dd">
+  </div>
+</div>
+
+НОВЫЙ
+<div>
+  <div class="container">
+    <label class="Start-type-the-tag-req" for="date1"
+           *ngIf="!isTouched()">*{{ 'ERROR.Required' | translate}}</label>
+    <label class="Tag-it-component" for="date1">{{ 'ADD_&_EDIT.Date' | translate}}:</label>
+  </div> <br>
+  <div class="form-group">
+    <input class="form-control" id="date1" placeholder="Select Date"
+           [ngxDatePicker]="dateInstanceSingle"
+           [formControl]="valueFormControl"
+           (valueChange)="onChangeDatePicker($event)">
+    <input class="form-control input width-40"
+           id="date"
+           name="date"
+           type="text"
+           placeholder="Select Date"
+           [ngxDatePicker]="dateInstanceSingle"
+           [formControl]="valueFormControl"
+           [value]="singleDate"
+           (valueChange)="onChangeDatePicker($event)">
+
+    <ngx-date-picker #dateInstanceSingle></ngx-date-picker>
+  </div>
+</div>
+-->

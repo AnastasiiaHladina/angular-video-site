@@ -1,0 +1,58 @@
+{
+  "HEADER": {
+    "Login": "Войти",
+    "LogOut": "Выйти"
+  },
+  "LOGIN": {
+    "Login_Title": "Авторизация",
+    "Title_Email": "Електронная почта",
+    "Title_Pass": "Пароль",
+    "Login_Button": "Авторизация"
+  },
+  "COURSES_LIST": {
+    "Courses": "Видео курсы",
+    "Add_Button": "Добавить курс",
+    "Load_More": "Загрузить",
+    "No_Data": "Нет данных. Можете добавить новый курс",
+    "Find": "Найти"
+  },
+  "COURSE": {
+    "Edit_Button": "Изменить",
+    "Delete_Button": "Удалить",
+    "Single": "Видео курс"
+  },
+  "ADD_COURSE": {
+    "Title_Page": "Добавить курс"
+  },
+  "EDIT_COURSE": {
+    "Title_Page": "Изменить курс"
+  },
+  "ADD_&_EDIT": {
+    "Title": "Название",
+    "Description": "Описание",
+    "Duration": "Продолжительность",
+    "Date": "Дата",
+    "Authors": "Авторы",
+    "Genre": "Жанр",
+    "Submit_Button": "Отправить",
+    "Cancel_Button": "Отменить"
+  },
+  "COURSE_PAGE": {
+  "Authors": "Авторы",
+  "Duration": "Продолжительность",
+  "Description": "Описание"
+},
+  "ERROR": {
+    "Error_Empty": "Это поле не должно быть пустым",
+    "Error_Not_Enough": "Поле должно содержать больше символов",
+    "Error_To_Many": "Поле должно содержать меньше символов",
+
+    "Error_Email": "Поле заполнено неверно",
+
+    "Required": "обязательно"
+  },
+  "LANGUAGES": {
+    "en": "Английский",
+    "ru": "Русский"
+  }
+}

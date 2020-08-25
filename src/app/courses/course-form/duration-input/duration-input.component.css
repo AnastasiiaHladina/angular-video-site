@@ -1,0 +1,32 @@
+.width-40, .container{
+  width: 40%;
+}
+.Start-type-the-tag-req {
+  font-family: SourceSansPro;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  float: right;
+  letter-spacing: 0.22px;
+  color: silver;
+}
+.Tag-it-component {
+  font-family: SourceSansPro;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.22px;
+  color: darkslategrey;
+}
+.input{
+  border-radius: 3px;
+  margin-bottom: 20px;
+  border: solid 1px grey;
+  padding: 5px 0px 5px 5px;
+  width: 40%;
+  background-color: #ffffff;
+}

@@ -1,0 +1,18 @@
+<div>
+    <div class="container">
+      <label class="Start-type-the-tag-req" for="genre"
+             *ngIf="!control.touched">*{{ 'ERROR.Required' | translate}}</label>
+      <label class="Tag-it-component" for="genre">{{ 'ADD_&_EDIT.Genre' | translate}}:</label>
+    </div> <br>
+
+    <div class="genreInput width-40" id="genre">
+        <select id="genreList" [formControl]="genreSelect">
+          <option *ngFor="let genre of genre$ | async"
+                  value="{{genre.id}}">{{genre.name}}</option>
+        </select>
+        <button class="genreName" *ngFor="let selectedGenre of courseGenre" disabled>
+          {{selectedGenre.name}}
+          <button class="remove" type="button" (click)="removeSelectedGenre(selectedGenre.id)">☓</button>
+        </button>
+    </div>
+</div>

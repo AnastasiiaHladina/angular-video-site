@@ -1,0 +1,18 @@
+.plus {
+  width: 18px;
+  height: 18px;
+}
+
+.Mask {
+	float: right;
+	border: none;
+	color: white;
+  text-decoration: none;
+	border-radius: 3px;
+  padding: 10px 20px;
+	background-color: #30b6dd;
+}
+.Mask:hover{
+	cursor: pointer;
+	background-color: #0091bb;
+}

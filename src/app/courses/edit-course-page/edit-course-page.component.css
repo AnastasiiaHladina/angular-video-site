@@ -1,0 +1,84 @@
+.Rectangle {
+  width: 731px;
+  border-radius: 8px;
+  margin: 20px auto 100px auto;
+  padding: 20px 40px 80px 20px;
+  box-shadow: 0 1px 24px 0 rgba(18, 21, 35, 0.08);
+  background-color: #ffffff;
+}
+textarea{
+  resize: none;
+}
+.New-course {
+  font-family: SourceSansPro;
+  font-size: 24px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: dimgrey;
+}
+.Tag-it-component {
+  font-family: SourceSansPro;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.22px;
+  color: darkslategrey;
+}
+.input{
+  border-radius: 3px;
+  margin-bottom: 20px;
+  border: solid 1px grey;
+  padding: 5px 0px 5px 5px;
+  width: 100%;
+  background-color: #ffffff;
+}
+.width-100{
+  width: 100%;
+}
+.width-40{
+  width: 40%;
+}
+.Start-type-the-tag-req {
+  font-family: SourceSansPro;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  float: right;
+  letter-spacing: 0.22px;
+  color: silver;
+}
+.save {
+  margin-right: 10px;
+  background-color: #a0f038;
+}
+.save:hover {
+  background-color: #94ca1a;
+}
+.cancel:hover {
+  background-color: #7c7b79;
+}
+.Mask {
+  line-height: 2.43;
+  letter-spacing: -0.1px;
+  width: 100px;
+  height: 48px;
+  border: none;
+  border-radius: 3px;
+}
+.Mask:hover{
+  cursor: pointer;
+}
+.pos-right {
+  float: right;
+}
+.red{
+  color: red;
+}

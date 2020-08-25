@@ -1,0 +1,39 @@
+.login-logout{
+  white-space: nowrap;
+  overflow: hidden;
+}
+.User-login {
+  width: 59px;
+  height: 18px;
+  font-family: SourceSansPro;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: white;
+  margin-right: 1.3em;
+  text-decoration: none;
+}
+.Log-off {
+  width: 40px;
+  height: 18px;
+  font-family: SourceSansPro;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+  margin-right: 1em;
+  text-decoration: none;
+  cursor: pointer;
+}
+.ic_exit {
+  width: 16px;
+  height: 12px;
+  object-fit: contain;
+}

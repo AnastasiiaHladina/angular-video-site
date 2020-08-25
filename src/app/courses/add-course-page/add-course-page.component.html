@@ -1,0 +1,7 @@
+<app-course-form
+  [pageTitle]="pageTitle"
+  [course]="course"
+  [authorsList]="authorsList$ | async"
+  (submitCourse)="onFormSubmit($event)"
+  (cancelEvent)="onFormCancel()"
+></app-course-form>

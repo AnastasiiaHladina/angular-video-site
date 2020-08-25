@@ -1,0 +1,9 @@
+<div *ngIf="crumbs$ | async as crumbs" class="breadcrumbs__container">
+  <div *ngFor="let crumb of crumbs; let last = last"
+      [ngClass]="{ 'breadcrumbs__item--active': last }"
+      class="breadcrumbs__item"
+  >
+    <a *ngIf="!last" [routerLink]="crumb.path">{{ crumb.text }}</a>
+    <h2 appBold *ngIf="last">{{ crumb.text | translate }}</h2>
+  </div>
+</div>

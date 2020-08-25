@@ -1,0 +1,71 @@
+.width-40, .container {
+  width: 40%;
+}
+.Start-type-the-tag-req {
+  font-family: SourceSansPro;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  float: right;
+  letter-spacing: 0.22px;
+  color: silver;
+}
+.Tag-it-component {
+  font-family: SourceSansPro;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.22px;
+  color: darkslategrey;
+}
+.input {
+  border-radius: 3px;
+  margin-bottom: 20px;
+  border: solid 1px grey;
+  padding: 5px 0px 5px 5px;
+  width: 40%;
+  background-color: #ffffff;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------------------*/
+.genreInput {
+  border-radius: 3px;
+  margin-bottom: 20px;
+  border: solid 1px grey;
+  width: 40%
+}
+#genreList {
+  width: 10%;
+  opacity: 0.3;
+}
+.genreName {
+  background-color: #89d8ff;
+  border: 1px solid #1229ff;
+  border-radius: 2px;
+  font-size: 14px;
+  padding: 3px 5px;
+  margin-left: 5px;
+  font-style: italic;
+  color: black;
+}
+.remove {
+  background-color: #dee1e1;
+  border: 1px solid #7b7b7b;
+  border-radius: 3px;
+  padding: 0 3px;
+  font-style: normal;
+}
+.remove:hover {
+  background-color: #4c494b;
+  color: white;
+  cursor: pointer;
+}

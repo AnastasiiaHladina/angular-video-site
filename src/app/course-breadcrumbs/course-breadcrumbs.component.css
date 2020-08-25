@@ -1,0 +1,7 @@
+.breadcrumbs__container {
+  padding: 0 6rem;
+  height: 64px;
+  background-color: white;
+  line-height: 60px;
+  margin-top: -20px;
+}

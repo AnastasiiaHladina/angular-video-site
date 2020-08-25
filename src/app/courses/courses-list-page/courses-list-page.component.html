@@ -1,0 +1,19 @@
+<app-find (searchChange)="onSearchChange($event)"></app-find>
+<app-add-course></app-add-course>
+
+<ng-container *ngIf = "courses$ | async; else noCourses">
+  <app-course
+    (deleteCourse)="deleteCourse($event)"
+    (editCourse)="editCourse($event)"
+    *ngFor = "let course of courses$ | async | orderByDate"
+    [course]="course">
+  </app-course>
+</ng-container>
+
+<ng-template #noCourses>
+  <div class="noCourses course">
+    <h2>{{ 'COURSES_LIST.No_Data' | translate}}</h2>
+  </div>
+</ng-template>
+
+<button *ngIf="courses$ | async" class="load-more" (click)="loadMore()">{{ 'COURSES_LIST.Load_More' | translate}}</button>

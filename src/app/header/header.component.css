@@ -1,0 +1,74 @@
+.bg {
+  width: 100%;
+  height: 64px;
+  background-color: #282a32;
+  line-height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 5fr 3fr;
+}
+.Logo {
+  width: 140px;
+  height: 64px;
+  object-fit: contain;
+  float: left;
+}
+
+.user-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.header-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.menu-li {
+  text-align: center;
+}
+
+.menu-li > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white
+}
+
+.menu-li > a:hover {
+  color: #8b00ff;
+}
+
+
+
+.li-film > ul {
+  list-style: none;
+  padding: 0;
+  cursor: pointer;
+}
+.li-film > ul > li > a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+.li-film > ul > li > a:hover {
+  color: #8b00ff;
+}
+
+
+
+#menu-film{
+  position:relative;
+}
+.li-film {
+  background-color: #282a32;
+  position: relative;
+  display: none;
+  top: -3px;
+  height: 300px;
+  overflow: auto;
+}
+#menu-film:hover .li-film{
+  display:block;
+  position: relative;
+  z-index: 2;
+  top: 13px;
+}

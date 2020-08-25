@@ -1,0 +1,52 @@
+<div class="auth authForm" >
+    <h3>{{ 'LOGIN.Login_Title' | translate}}</h3>
+    <form role="form" class="authForm"
+          novalidate
+          [formGroup]="singUpForm"
+          (ngSubmit)="onLogin()">
+      <div class="form-group">
+        <label for="email">{{ 'LOGIN.Title_Email' | translate}}:</label> <br>
+        <div class="validation" *ngIf="isInvalidAndTouched('email')">
+          <label class="errorMsg" for="email"
+                 *ngIf="onInputRequired('email')">
+            <small> *{{ 'ERROR.Error_Empty' | translate}}</small>
+          </label>
+          <label class="errorMsg" for="email"
+                 *ngIf="getElementErrors('email').email">
+            <small> *{{ 'ERROR.Error_Email' | translate}} </small>
+          </label>
+        </div>
+        <div class="form-group">
+          <input class="form-control"
+                 id="email"
+                 type="text"
+                 formControlName="email"
+                 placeholder="Enter e-mail"> <br>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password">{{ 'LOGIN.Title_Pass' | translate}}:</label> <br>
+        <div class="validation" *ngIf="isInvalidAndTouched('password')">
+          <label class="errorMsg" for="password"
+                 *ngIf="onInputRequired('password')">
+            <small> *{{ 'ERROR.Error_Empty' | translate}}</small>
+          </label>
+          <label class="errorMsg" for="password"
+                 *ngIf="onInputMinLength('password')">
+            <small> *{{ 'ERROR.Error_Not_Enough' | translate}}</small>
+          </label>
+          <label class="errorMsg" for="password"
+                 *ngIf="onInputMaxLength('password')">
+            <small> *{{ 'ERROR.Error_To_Many' | translate}}</small>
+          </label>
+        </div>
+        <input
+           class="form-control"
+           id="password"
+           type="password"
+           formControlName="password"
+           placeholder="Enter password"> <br>
+        <button class="Mask" type="submit" [disabled]="singUpForm.invalid">{{ 'LOGIN.Login_Title' | translate}}</button>
+      </div>
+    </form>
+</div>

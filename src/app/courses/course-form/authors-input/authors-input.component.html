@@ -1,0 +1,19 @@
+<div>
+    <div class="container">
+      <label class="Start-type-the-tag-req" for="authors"
+             *ngIf="!control.touched">*{{ 'ERROR.Required' | translate}}</label>
+      <label class="Tag-it-component" for="authors">{{ 'ADD_&_EDIT.Authors' | translate}}:</label>
+    </div> <br>
+
+    <div class="authorsInput width-40" id="authors">
+        <select id="authorsList" [formControl]="authorsSelect">
+          <option *ngFor="let author of authors$ | async"
+                  value="{{author.id}}">{{author.name}}
+          </option>
+        </select>
+        <button class="authorsName" *ngFor="let selectedAuthor of courseAuthors" disabled>
+          {{selectedAuthor.name}}
+          <button class="remove" type="button" (click)="removeSelectedAuthor(selectedAuthor.id)">☓</button>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="course" *ngIf="course">
+  <h1 class="title">
+    <span>
+      {{ course.name | uppercase }}
+    </span>
+    <br>
+    <span class="created-At">
+      <i class="fas fa-calendar-alt"></i>
+      {{ course.date | date:'d MMM, yyyy' }}
+    </span>
+    <span class="created-At t">
+      <i class="fas fa-clock"></i>
+      {{ course.date | date:'hh' }} h
+      {{ course.date | date:'mm' }} min
+    </span>
+  </h1>
+  <iframe
+    src="https://www.youtube.com/embed/viimfQi_pUw"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+  <div class="duration secondTitle">
+    <i class="fas fa-history"></i>
+    {{ 'COURSE_PAGE.Duration' | translate}}: <span> {{ course.length }}  min</span>
+  </div>
+  <h5 class="secondTitle">
+    <i class="fas fa-user-friends"></i>
+    {{ 'COURSE_PAGE.Authors' | translate}}:
+    <span *ngFor="let author of course.authors">{{author.name}};</span>
+  </h5>
+  <p class="secondTitle">
+    <i class="fas fa-stream"></i>
+    {{ 'COURSE_PAGE.Description' | translate}}:
+    <span>{{course.description}}</span>
+  </p>
+</div>

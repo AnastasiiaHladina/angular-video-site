@@ -1,0 +1,41 @@
+<div [ngClass]="{
+  fresh: isFreshCourse,
+  upcoming: ifWillBeReleasedCourse,
+  old: !isFreshCourse && !ifWillBeReleasedCourse,
+  ifStarClick: course.isTopRated
+}" class="course">
+  <button class="Mask margin-l" (click)="editSelectedCourse(course.id)">{{ 'COURSE.Edit_Button' | translate }}</button>
+  <button class="Mask" (click)="changeDeleteVariable()">{{ 'COURSE.Delete_Button' | translate }}</button>
+  <h2 class="title">
+    <span>
+      <a class="link" [routerLink]="['/courses/course/', course.id]">
+        {{ course.name | uppercase }}
+      </a>
+      <button class="star" (click)="changeStar()">
+        <i class="far fa-star" [class.ifStarClickForStar]="course.isTopRated"> </i>
+      </button>
+    </span>
+    <span class="created-At">
+      <i class="fas fa-calendar-alt"></i>
+      {{ course.date | date:'d MMM, yyyy' }}
+    </span>
+    <span class="created-At t">
+      <i class="fas fa-clock"></i>
+      {{ course.date | date:'hh' }} h
+      {{ course.date | date:'mm' }}min
+    </span>
+  </h2>
+  <div class="delete" *ngIf="ifDeleteCourse">
+    <h4>Do you want delete this course?</h4>
+    <button class="answ" (click)="deleteSelectedCourse(course.id)"> Yes</button>
+    <button (click)="changeDeleteVariable()" class="answ"> No</button>
+  </div>
+  <div class="duration"><i class="fas fa-history"></i>
+    Duration: <strong> {{ course.length }} </strong> min.
+  </div>
+  <br>
+  <p>{{ course.description }}</p>
+</div>
+
+
+

@@ -1,0 +1,30 @@
+.find-box{
+	margin-top: 3em;
+}
+.icon{
+  position: absolute;
+  z-index: 1;
+  color: #4f5b66;
+  margin: 13px 10px;
+}
+.find-input{
+	width: 360px;
+	height: 26px;
+	font-size: 14px;
+	border-radius: 3px;
+	border: solid 1px #d9dbe3;
+	background-color: white;
+	padding: 10px 40px;
+}
+.Mask {
+  width: 100px;
+  height: 48px;
+  border: none;
+  border-radius: 3px;
+  background-color: #a0f038;
+  margin-left: 10px
+}
+.Mask:hover{
+  cursor: pointer;
+  background-color: #94ca1a;
+}
